@@ -45,7 +45,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: "Microsoft YaHei Light", "PingFang Sc", "WenQuanYi Micro Hei";
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
@@ -265,7 +265,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: "Microsoft YaHei Light", "PingFang Sc", "WenQuanYi Micro Hei";
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -503,13 +503,57 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+## Titles
+--------------------------------------------------------------*/
+.site-header {
+	padding: 20px 0 50px;
+	padding: 1.3333333333rem 0 3.3333333333rem;
+}
+.site-header h1,
+.site-header h2 {
+	text-align: center;
+}
+.site-header h1 a,
+.site-header h2 a {
+	color: #515151;
+	display: inline-block;
+	text-decoration: none;
+}
+.site-header h1 a:hover,
+.site-header h2 a:hover {
+	color: #21759b;
+}
+.site-header h1 {
+	font-size: 24px;
+	font-size: 1.6rem;
+	line-height: 1.285714286;
+	margin-bottom: 14px;
+	margin-bottom: 0.93333333333rem;
+}
+.site-header h2 {
+	font-weight: normal;
+	font-size: 13px;
+	font-size: 0.86666666667rem;
+	line-height: 1.846153846;
+	color: #757575;
+}
+
+.site-title {
+	display: inline;
+}
+
+
+/*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	
+	vertical-align: baseline;
+	float: right;
+	margin-top: 4px;
+	margin-top: 0.26666666667rem;
+	text-align: center;
+	
 }
 
 .main-navigation ul {
