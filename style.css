@@ -519,10 +519,16 @@ a:hover, a:active {
 ## Titles
 --------------------------------------------------------------*/
 .site-header {
+	
 	line-height: 70px;
 	line-height: 4rem;
 	vertical-align: middle;
+	border-bottom-style:solid;
+	border-bottom-color:#eee;
+	border-bottom-width: 1px;
+
 }
+
 .site-header h1,
 .site-header h2 {
 	text-align: center;
