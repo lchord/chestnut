@@ -187,6 +187,10 @@ select {
 	text-transform: none;
 }
 
+:focus {
+	outline: none;
+}
+
 button,
 html input[type="button"],
 input[type="reset"],
@@ -399,27 +403,29 @@ table {
 	margin: auto;
 }
 
-#primary {
-	float: left;
-	width: 70%;
-}
 
-#secondary {
-	float: right;
-	padding-top: 0;
-	width: 28%;
-}
-
-.error404 #primary {
-	float: none;
-}
-.error404 #secondary {
-	display: none;
-}
 
 @media screen and (min-width: 37.5em) {
 	.site {
 		width: 1000px;
+	}
+
+	#primary {
+		float: left;
+		width: 70%;
+	}
+	
+	#secondary {
+		float: right;
+		padding-top: 0;
+		width: 28%;
+	}
+	
+	.error404 #primary {
+		float: none;
+	}
+	.error404 #secondary {
+		display: none;
 	}
 }
 
@@ -474,10 +480,15 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
+	color: #eee;
+	background: #fff;
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+	border: 1px solid #eee;
+	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	padding: 3px;
+	display: block;
+	padding: 0.7em;
+	width: 100%;
 }
 
 input[type="text"]:focus,
@@ -496,7 +507,8 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: #111;
+	color: #666;
+	border-color: #bbb;
 }
 
 select {
@@ -514,15 +526,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #111;
 }
 
 a:visited {
-	color: purple;
+	color: #111;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #000;
 }
 
 a:focus {
@@ -559,7 +571,7 @@ a:hover, a:active {
 }
 .site-header h1 a:hover,
 .site-header h2 a:hover {
-	color: #21759b;
+	color: #313131;
 }
 .site-header h1 {
 	font-size: 24px;
@@ -778,10 +790,36 @@ a:hover, a:active {
 	/* Make sure select elements fit in widgets. */
 }
 
+.widget_search {
+	margin: 1.5em 0;
+}
+
 .widget select {
 	max-width: 100%;
 }
 
+/* Search */
+.search-field {
+	width: 100%
+}
+
+.search-form {
+	position: relative;
+}
+
+.search-form .search-submit {
+	bottom: 3px;
+	padding: 0.5em 1em;
+	position: absolute;
+	right: 3px;
+	top: 3px;
+}
+
+.search-form .search-submit .icon {
+	height: 24px;
+	top: -2px;
+	width: 24px;
+}
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
