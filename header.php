@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header">
 		
 		
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">root@<?php bloginfo( 'name' ); ?>:~# _</a></h1>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>.log</a></h1>
 			
 				
 		
