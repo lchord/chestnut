@@ -26,20 +26,10 @@
 
 	<header id="masthead" class="site-header">
 		
-			<?php
-			the_custom_logo();
-			?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">root@<?php bloginfo( 'name' ); ?>:~# _</a></h1>
 			
 				
-			<?php
-			
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
 		
 
 		<nav id="site-navigation" class="main-navigation">

@@ -392,6 +392,19 @@ table {
 	width: 100%;
 }
 
+
+.site {
+	margin: 0 auto;
+	max-width: 90%;
+	margin: auto;
+}
+
+@media screen and (min-width: 37.5em) {
+	.site {
+		width: 1000px;
+	}
+}
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -539,6 +552,7 @@ a:hover, a:active {
 }
 
 .site-title {
+	font-family: Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;
 	display: inline;
 }
 
@@ -604,7 +618,7 @@ a:hover, a:active {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: none;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -612,7 +626,7 @@ a:hover, a:active {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: inline;
 	}
 }
 

@@ -116,10 +116,12 @@ add_action( 'widgets_init', 'chestnut_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
+/**
+ * wp_enqueue_script( 'chestnut-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+ */
 function chestnut_scripts() {
 	wp_enqueue_style( 'chestnut-style', get_stylesheet_uri() );
-
-	wp_enqueue_script( 'chestnut-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'chestnut-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
